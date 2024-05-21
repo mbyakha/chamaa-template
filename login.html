@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">
+    <img src="money.JPG" alt="Logo" style="width:60px;">
+  </a>
+		 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" style="color: blue; font-weight: bold; font-size: 15px;" href="#" >SIGN UP</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link"style="color: blue; font-weight: bold;font-size: 15px;" href="#">LOGIN</a>
+            </li>
+        </ul>
+
+    </div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-sm-3 bg-info" style="height: 90vh;">
+<form style="border:1px solid #ccc">
+  <div class="container-fluid">
+    <h5 style="padding-top: 10px;">REGISTER CHAMAA MEMBER</h5><hr>
+
+    <label for="firstname"><b>First Name</b></label>
+    <input type="text" placeholder="firstname" name="firstname" required>
+
+    <label for="othernames"><b>Other Names</b></label>
+    <input type="text" placeholder="Other Names" name="othernames" required>
+
+    <label for="emailadress"><b>Email Adress</b></label>
+    <input type="text" placeholder="Email Adress" name="emailadress" required>
+
+     <label for="phonenumber"><b>Phone Number</b></label>
+    <input type="text" placeholder="Phone Number" name="phonenumber" required>
+
+     <label for="chamaanumber"><b>Chamaa Number</b></label>
+    <input type="text" placeholder="Chamaa Number" name="chamaanumber" required>
+      
+      <button type="submit" class="signupbtn">ADD MEMBER</button>
+    </div>
+</form>
+
+
+</div>
+
+
+		<div class="col-sm-9" style="height: 100vh;">
+			<div class="row">
+				<div class="col-sm-4" style="background-image:url('members.JPG'); height:40vh;">
+
+				<button type="button" class="btn btn-secondary" style="margin-top: 100px;"> VIEW ALL MEMBERS</button>
+
+				</div>
+				
+				<div class="col-sm-4" style="background-image:url('total1.JPG'); height:40vh;">
+
+				<button type="button" class="btn btn-secondary" style="margin-top: 100px;">TOTAL CONTRIBUTIONS</button>
+				</div>
+				<div class="col-sm-4" style="background-image:url('invest.JPG'); height:40vh;"><button type="button" class="btn btn-secondary" style="margin-top: 100px;">ALL INVESTMENTS</button></div>
+
+				<div class="col-sm-9" style="height:40vh;"> 
+			
+				<div class="w3-content w3-section" style="max-width:100vh">
+  <img class="mySlides" src="total1.JPG" style="width:100vh">
+  <img class="mySlides" src="loss2.JPG" style="width:100%">
+  <img class="mySlides" src="loss3.JPG" style="width:100%">
+</div>
+				
+		</div>
+		<div class="col-sm-3" style="height:40vh; background-color: burlywood;">
+
+			<h6 style="padding-top:10px;">CONTACT US:</h6><hr>
+				harrietnekesa8@gmail.com
+				admin@viewincode.co.ke
+		 </div>
+
+				<div class="col-sm-12" style="background-color: grey; height:10vh;"> 
+
+					<h3 style="font-size: 20px; padding: 5px;">Hii Chamaa Ni Yetu na Tutafanya kwa mazuri ya kila Mwanachamaa</h3>
+				&copy; 2024 Nekesa Mbyakha 0794838100
+
+</div>
+			</div>
+		
+	</div>
+</div>
+</div>
+
+</body>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
